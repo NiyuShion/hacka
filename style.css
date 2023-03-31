@@ -58,7 +58,7 @@ header {
 
 
 body {
-	 background-color: #000;
+	background-color: #ECFFE8;
 	 margin: 0;
 }
  .overlay {
@@ -150,3 +150,45 @@ body {
 	 border: 0 solid #f00;
 }
  
+.container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+  }
+  
+  .home02 {
+	margin-right: 300px;
+  }
+  
+  .home02 img {
+	position: flex;
+	margin: 0 125px;
+	max-width: 100%;
+	height: auto;
+	
+  }
+  
+  .texts1 {
+	font-family: 'Ovo';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 25px;
+	line-height: 30px;
+
+color: #454E47;
+  }
+  
+  .texts1 ul {
+	list-style: disc;
+	margin-left: 30px;
+  }
+  
+  .texts1 h1 {
+	position: flex;
+	font-family: 'Ovo';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 28px;
+	line-height: 32px;
+	text-align: center;
+  }
