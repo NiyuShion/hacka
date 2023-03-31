@@ -1,43 +1,59 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>EcoLifestyle</title>
-  <meta charset="UTF-8">
+	<title>Responive Carousel Slider</title>
+	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.1/flickity.css">
 </head>
 <body>
+	<header>
+		<div class="logo">
+		  <img src="img/logo.png" alt="Логотип">
+		</div>
+		<div class="categories">
+		  <a href="#">НОВОСТИ</a>
+		  <a href="#">ТЕХНОЛОГИИ</a>
+		  <a href="#">ПЕРЕРАБОТКА ОТХОДОВ</a>
+		  <a href="#">ЭКОЛОГИЧЕСКИЙ ОБРАЗ ЖИЗНИ</a>
+		  <a href="#">ОБРАТНАЯ СВЯЗЬ</a>
+		</div>
+		<div class="login">
+		  <a href="#" class="button">Войти</a>
+		</div>
+	  </header>
 
+	<main>
 <div class="hero-slider" data-carousel>
 	<div class="carousel-cell" style="background-image: url(img/img-1.jpg);">
 		<div class="overlay"></div>
 		<div class="inner">
-			<h3 class="subtitle">Экология</h3>
-			<h2 class="title">Как часть нашей жизни</h2>
-			<a href="#" class="btn">Подробнее</a>
+			<h3 class="subtitle">Slide 1</h3>
+			<h2 class="title">Flickity parallax</h2>
+			<a href="#" class="btn">Tell me more</a>
 		</div>
 	</div>
 
 	<div class="carousel-cell" style="background-image: url(img/img-2.jpg);">
 		<div class="overlay"></div>
 		<div class="inner">
-			<h3 class="subtitle">экология</h3>
-			<h2 class="title">это ответственность каждого из нас</h2>
-			<a href="#" class="btn">Подробнее</a>
+			<h3 class="subtitle">Slide 2</h3>
+			<h2 class="title">Flickity parallax</h2>
+			<a href="#" class="btn">Tell me more</a>
 		</div>
 	</div>
 
 	<div class="carousel-cell" style="background-image: url(img/img-3.jpg);">
 		<div class="overlay"></div>
 		<div class="inner">
-			<h3 class="subtitle">экология</h3>
-			<h2 class="title">то, чего мы должны достичь</h2>
-			<a href="#" class="btn">Подробнее</a>
+			<h3 class="subtitle">Slide 3</h3>
+			<h2 class="title">Flickity parallax</h2>
+			<a href="#" class="btn">Tell me more</a>
 		</div>
 	</div>
 </div>
-
+</main>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.1/flickity.pkgd.min.js"></script>
 <script type="text/javascript" src="script.js"></script>
 </body>
