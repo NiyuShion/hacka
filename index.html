@@ -1,88 +1,170 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Responive Carousel Slider</title>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.1/flickity.css">
+    <title>Responive Carousel Slider</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="slider.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab:wght@300&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.1/flickity.css">
+    <script src="https://kit.fontawesome.com/012beec9f6.js" crossorigin="anonymous"></script>
 </head>
 <body>
-	<header>
-		<div class="logo">
-		  <img src="img/logo.png" alt="Логотип">
-		</div>
-		<div class="categories">
-		  <a href="#">НОВОСТИ</a>
-		  <a href="#">ТЕХНОЛОГИИ</a>
-		  <a href="#">ПЕРЕРАБОТКА ОТХОДОВ</a>
-		  <a href="#">ЭКОЛОГИЧЕСКИЙ ОБРАЗ ЖИЗНИ</a>
-		  <a href="#">ОБРАТНАЯ СВЯЗЬ</a>
-		</div>
-		<div class="login">
-		  <a href="#" class="button">Войти</a>
-		</div>
-	  </header>
+<header>
+    <div class="logo">
+        <img src="img/logo.png" alt="Логотип">
+    </div>
+    <div>
+        <img src="img/logo-small.png" alt="Логотип" id="logo-small">
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#">НОВОСТИ</a></li>
+            <li><a href="#">ТЕХНОЛОГИИ</a></li>
+            <li><a href="#">ПЕРЕРАБОТКА ОТХОДОВ</a></li>
+            <li><a href="#">ЭКО ЖИЗНЬ</a></li>
+            <li><a href="#" id="feedback-header">ОБРАТНАЯ СВЯЗЬ</a></li>
+        </ul>
+    </nav>
+    <div class="login">
+        <a href="#" class="login-btn">Войти</a>
+    </div>
+
+    <div class="login-mobile">
+        <a href="#"><i class="fa-solid fa-right-to-bracket"></i></a>
+    </div>
+
+    <div class="sidebar-open"><i class="fa-solid fa-bars-staggered"></i></div>
+</header>
 
 <main>
-<div class="introslide">
-		<div class="hero-slider" data-carousel>
-			<div class="carousel-cell" style="background-image: url(img/img-1.jpg);">
-				<div class="overlay"></div>
-				<div class="inner">
-					<h3 class="subtitle">Экология</h3>
-					<h2 class="title">Заботься о природе - заботься о своем будущем!</h2>
-					<a href="#" class="btn">подробнее</a>
-				</div>
-			</div>
+    <div class="hero-slider" data-carousel>
+        <div class="carousel-cell" style="background-image: url(img/img-1.jpg);">
+            <div class="overlay"></div>
+            <div class="inner">
+                <h3 class="subtitle">Экология</h3>
+                <h2 class="title">Заботься о природе - заботься о своем будущем!</h2>
+                <a href="#" class="btn">подробнее</a>
+            </div>
+        </div>
 
-	<div class="carousel-cell" style="background-image: url(img/img-2.jpg);">
-		<div class="overlay"></div>
-		<div class="inner">
-			<h3 class="subtitle">Экология</h3>
-			<h2 class="title">Сохранение природы - залог жизни на планете!</h2>
-			<a href="#" class="btn">подробнее</a>
-		</div>
-	</div>
+        <div class="carousel-cell" style="background-image: url(img/img-2.jpg);">
+            <div class="overlay"></div>
+            <div class="inner">
+                <h3 class="subtitle">Экология</h3>
+                <h2 class="title">Сохранение природы - залог жизни на планете!</h2>
+                <a href="#" class="btn">подробнее</a>
+            </div>
+        </div>
 
-	<div class="carousel-cell" style="background-image: url(img/img-3.jpg);">
-		<div class="overlay"></div>
-		<div class="inner">
-			<h3 class="subtitle">Экология</h3>
-			<h2 class="title">Природа не нуждается в нас, но мы нуждаемся в ней!</h2>
-			<a href="#" class="btn">подробнее</a>
-		</div>
-	</div>
-	<div class="hero-slider" data-carousel>
-		<div class="carousel-cell" style="background-image: url(img/img-4.jpg);">
-			<div class="overlay"></div>
-			<div class="inner">
-				<h3 class="subtitle">Экология</h3>
-				<h2 class="title">Чистый воздух, чистая вода, чистая земля - здоровье человека!</h2>
-				<a href="#" class="btn">подробнее</a>
-			</div>
-		</div>
-</div>
-</div>
+        <div class="carousel-cell" style="background-image: url(img/img-3.jpg);">
+            <div class="overlay"></div>
+            <div class="inner">
+                <h3 class="subtitle">Экология</h3>
+                <h2 class="title">Природа не нуждается в нас, но мы нуждаемся в ней!</h2>
+                <a href="#" class="btn">подробнее</a>
+            </div>
+        </div>
+        <div class="hero-slider" data-carousel>
+            <div class="carousel-cell" style="background-image: url(img/img-4.jpg);">
+                <div class="overlay"></div>
+                <div class="inner">
+                    <h3 class="subtitle">Экология</h3>
+                    <h2 class="title">Чистый воздух, чистая вода, чистая земля - здоровье человека!</h2>
+                    <a href="#" class="btn">подробнее</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
-<div class="container">
-	<div class="home02">
-	  <img src="img/home02.png" alt="Экологическая грамотность">
-	</div>
-	<div class="texts1">
-	  <h1>Немного о нас</h1>
-	  <p>Мы стараемся распространять знания и прививать экологическую грамотность у наших посетителей. Наши цели и задачи включают в себя:</p>
-	  <ul>
-		<li>Предоставление информации о том, как жить более экологически-ориентированной жизнью;</li>
-		<li>Рассказ о том, как уменьшить количество мусора, используемых ресурсов и выбирать продукты без лишней упаковки;</li>
-		<li>Обучение технике правильной сортировки и переработки отходов;</li>
-		<li>Представление примеров историй людей, которые уже принимают участие в экологических инициативах;</li>
-		<li>Распространение информации о новейших технологиях и научных разработках, связанных с экологией.</li>
-	  </ul>
-	</div>
-  </div>
+    <div class="section-name">
+        <h1>О проекте</h1>
+        <div class="section-line"></div>
+    </div>
+
+    <section class="about">
+
+        <div class="about__box">
+            <div class="about__image">
+                <img src=""/>
+            </div>
+            <div class="about__text">
+                Добро пожаловать! <b>EcoLifestyle</b> покажет вам жизнь без отходов! <b>Мы</b> являемся экспертами в
+                этой области и стремимся <b>помочь людям</b>, которые хотят <b>изменить</b> свои привычки и стать более
+                <b>экологичными</b>.
+            </div>
+            <div class="about__text_mobile"><b>Мы</b> являемся экспертами в
+                этой области и стремимся <b>помочь людям</b></div>
+        </div>
+
+        <div class="about__box">
+            <div class="about__text_mobile"><b>Мы</b> являемся экспертами в
+                этой области и стремимся <b>помочь людям</b></div>
+            <div class="about__text">
+                Добро пожаловать! <b>EcoLifestyle</b> покажет вам жизнь без отходов! <b>Мы</b> являемся экспертами в
+                этой области и стремимся <b>помочь людям</b>, которые хотят <b>изменить</b> свои привычки и стать более
+                <b>экологичными</b>.
+            </div>
+            <div class="about__image">
+                <img src=""/>
+            </div>
+        </div>
+
+        <div class="about__box">
+            <div class="about__image">
+                <img src=""/>
+            </div>
+            <div class="about__text">
+                Добро пожаловать! <b>EcoLifestyle</b> покажет вам жизнь без отходов! <b>Мы</b> являемся экспертами в
+                этой области и стремимся <b>помочь людям</b>, которые хотят <b>изменить</b> свои привычки и стать более
+                <b>экологичными</b>.
+            </div>
+            <div class="about__text_mobile"><b>Мы</b> являемся экспертами в
+                этой области и стремимся <b>помочь людям</b></div>
+        </div>
+
+        <div class="about__box">
+            <div class="about__text_mobile"><b>Мы</b> являемся экспертами в
+                этой области и стремимся <b>помочь людям</b></div>
+            <div class="about__text">
+                Добро пожаловать! <b>EcoLifestyle</b> покажет вам жизнь без отходов! <b>Мы</b> являемся экспертами в
+                этой области и стремимся <b>помочь людям</b>, которые хотят <b>изменить</b> свои привычки и стать более
+                <b>экологичными</b>.
+            </div>
+            <div class="about__image">
+                <img src=""/>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-name">
+        <h1>С нами вы научитесь</h1>
+        <div class="section-line"></div>
+    </div>
+
+    <section class="learn">
+        <div class="learn__item">
+            <img src="img/learn-1.png"/>
+            <p>Жить более экологически-ориентированной жизнью</p>
+        </div>
+        <div class="learn__item">
+            <img src="img/learn-4.png"/>
+            <p>Уменьшать количество мусора, используемых ресурсов и выбирать продукты без лишней упаковки</p>
+        </div>
+        <div class="learn__item">
+            <img src="img/learn-2.png"/>
+            <p>Правильной сортировке и переработке отходов</p>
+        </div>
+        <div class="learn__item">
+            <img src="img/learn-3.png"/>
+            <p>Быть в курсе новейших технологиях и научных разработках, связанных с экологией</p>
+        </div>
+    </section>
 </main>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.1/flickity.pkgd.min.js"></script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.1/flickity.pkgd.min.js"></script>
 <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
