@@ -265,6 +265,17 @@ MAIN
     transform: scale(1.1);
 }
 
+
+.categories{
+    display: flex;
+    justify-content: space-between;
+    width: 1024px;
+}
+
+.category{
+
+}
+
 /*
 
 Animations
